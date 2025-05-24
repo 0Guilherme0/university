@@ -1,0 +1,101 @@
+package questao4;
+
+import java.util.ArrayList;
+
+public class BaseDadosFuncionario {
+    private static ArrayList<Funcionario> funcionarios;
+
+    public void createBase() {
+        funcionarios = new ArrayList<Funcionario>();
+        inicializarBase();
+    }
+    
+    private static void inicializarBase() {
+    	funcionarios.add(new Funcionario("Severino de Jesus", "064.749.190-78", "(81) 99999-1111", "sevjesus@gmail.com", 1500.00, "func001"));
+    	funcionarios.add(new Funcionario("Maria Silva", "575.373.110-48", "(82) 99999-0001", "mariasilva@gmail.com", 1500.00, "func002"));
+    	funcionarios.add(new Funcionario("José Santos", "941.860.760-30", "(81) 99999-0000", "josesantos@gmail.com", 3000.00, "func003")); 
+
+    }
+
+    public Funcionario buscarFuncionario(Funcionario funcionario) {
+    	Funcionario foundFunc;
+    	for (Funcionario currentFunc: funcionarios) {
+    		if (currentFunc.equals(funcionario)) {
+    			foundFunc = new Funcionario(currentFunc.getNome(), currentFunc.getCpf(), currentFunc.getTelefone(), 
+    							currentFunc.getEmail(),currentFunc.getSalario(), currentFunc.getMatricula());
+    			return foundFunc;
+    		}	
+    	}
+    	return null;
+    	
+    }
+    
+    public Funcionario buscarFuncionario(String cpf) {
+    	for (Funcionario currentFuc: funcionarios) {
+    		if (currentFuc.getCpf().equals(cpf)) return currentFuc;
+    		
+    	}
+    	return null;
+    }
+    
+    public boolean adicionarFuncionario(Funcionario funcionario) {
+    	if (!funcionario.getCpf().equals(buscarFuncionario(funcionario.getCpf()).getCpf()) && 
+    		ValidadorCPF.validarCPF(funcionario.getCpf())) {
+    		if (funcionarios.add(funcionario)) return true;
+    	}
+    	return false; 	
+    }
+    
+    public boolean removeFuncionario(String cpf) {
+    	if (funcionarios.remove(buscarFuncionario(cpf))) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    public boolean atualizarFuncionario(String matricula, Funcionario funcionarioAtualizado) {
+        Funcionario funcionarioExistente = buscarFuncionario(matricula);
+
+        if (funcionarioExistente != null && funcionarioExistente.getMatricula().equals(funcionarioAtualizado.getMatricula())) {
+            int index = funcionarios.indexOf(funcionarioExistente);
+            funcionarios.set(index, funcionarioAtualizado);
+            return true;
+        }
+        
+        return false;
+    }
+
+	public static ArrayList<Funcionario> getFuncionarios() {
+		return funcionarios;
+	}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+

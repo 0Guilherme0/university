@@ -1,0 +1,12 @@
+package questao5;
+
+public class App {
+    public static void main(String[] args) {
+    	BaseDados.createBase();
+    	
+    	for (Usuario usuario: BaseDados.getUsuario()) {
+    		System.out.println(usuario);
+    	}
+    }
+}
+

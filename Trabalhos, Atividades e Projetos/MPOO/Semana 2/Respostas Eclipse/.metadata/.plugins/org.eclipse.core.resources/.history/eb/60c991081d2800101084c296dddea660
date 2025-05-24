@@ -1,0 +1,18 @@
+package questao10;
+
+import javax.swing.JOptionPane;
+
+public class Mensagem {
+ public static final String MENSAGEM_FALHA  = "Falha no sistema";
+ protected static final String MENSAGEM_SUCESSO = "Operação realizada com sucesso";
+ private static final String MENSAGEM_ERRO  = "O sistema será finalizado";
+ static final String MENSAGEM = "Bem vindo ao sistema";
+
+ public static String exibirMensagemFalha() {
+     return "Falha";
+ }
+
+ public static void exibirMensagem(String mensagem) {
+     JOptionPane.showMessageDialog(null, mensagem);
+ }
+}

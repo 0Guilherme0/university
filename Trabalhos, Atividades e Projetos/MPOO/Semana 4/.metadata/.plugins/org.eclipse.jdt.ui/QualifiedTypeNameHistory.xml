@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.StrictMath"/>
+    <fullyQualifiedTypeName name="questao3.BaseDadosCliente"/>
+    <fullyQualifiedTypeName name="questao3.BaseDadosFuncionario"/>
+    <fullyQualifiedTypeName name="questao4.Cliente"/>
+    <fullyQualifiedTypeName name="questao4.Funcionario"/>
+    <fullyQualifiedTypeName name="questao4.BaseDadosFuncionario"/>
+    <fullyQualifiedTypeName name="questao4.BaseDadosCliente"/>
+    <fullyQualifiedTypeName name="questao4.ValidadorCPF"/>
+    <fullyQualifiedTypeName name="questao5.Endereco"/>
+    <fullyQualifiedTypeName name="questao5.BaseDados"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="questao6.Produto"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="questao6.Venda"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="questao6.Compra"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+</qualifiedTypeNameHistroy>

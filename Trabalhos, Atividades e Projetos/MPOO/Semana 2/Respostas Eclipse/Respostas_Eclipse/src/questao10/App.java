@@ -1,0 +1,15 @@
+package questao10;
+
+public class App {
+    public static void main(String[] args) {
+        Mensagem.exibirMensagem(Mensagem.MENSAGEM);
+        
+        Mensagem.exibirMensagem(Mensagem.MENSAGEM_SUCESSO);
+
+        String falha = Mensagem.exibirMensagemFalha();
+        Mensagem.exibirMensagem(falha);
+
+        Mensagem.exibirMensagem(Mensagem.getMensagemErro());
+    }
+}
+

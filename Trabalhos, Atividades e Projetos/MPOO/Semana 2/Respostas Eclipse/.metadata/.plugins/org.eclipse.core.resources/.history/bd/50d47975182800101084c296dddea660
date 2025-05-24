@@ -1,0 +1,40 @@
+package questao8;
+
+public class Q8_1 {
+    public static void main(String[] args) {
+        if (args.length != 3) {
+            System.out.println("Uso: java Main <número1> <operador> <número2>");
+            System.out.println("Exemplo: java Main 10 + 5");
+            return;
+        }
+
+        double num1 = Double.parseDouble(args[0]);
+        String operador = args[1];
+        double num2 = Double.parseDouble(args[2]);
+        double resultado;
+
+        switch (operador) {
+            case "+":
+                resultado = num1 + num2;
+                break;
+            case "-":
+                resultado = num1 - num2;
+                break;
+            case "*":
+                resultado = num1 * num2;
+                break;
+            case "/":
+                if (num2 == 0) {
+                    System.out.println("Erro: divisão por zero!");
+                    return;
+                }
+                resultado = num1 / num2;
+                break;
+            default:
+                System.out.println("Operador inválido. Use: +, -, *, /");
+                return;
+        }
+
+        System.out.println("Resultado: " + resultado);
+    }
+}

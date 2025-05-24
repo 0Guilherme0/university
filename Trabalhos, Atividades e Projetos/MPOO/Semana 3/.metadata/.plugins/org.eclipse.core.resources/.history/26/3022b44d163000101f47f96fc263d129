@@ -1,0 +1,12 @@
+package app;
+
+import pacoteA.ClasseA;
+import pacoteB.ClasseB;
+
+public class App {
+	public static void main(String[] args) {
+		ClasseA objA = new ClasseA(1, 1);
+		ClasseB objB = new ClasseB(1, 1);
+		
+	}
+}

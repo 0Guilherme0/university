@@ -1,0 +1,75 @@
+package questao5;
+
+import java.util.ArrayList;
+
+public class BaseDados {
+    private static ArrayList<Cliente> clientes;
+
+    public void createBase() {
+        clientes = new ArrayList<Cliente>();
+        inicializarBase();
+    }
+    
+    private static void inicializarBase() {
+    	clientes.add(new Cliente("José Santos", "941.860.760-30", "(81) 99999-0000", "josesantos@gmail.com"));
+    	clientes.add(new Cliente("Maria Silva", "575.373.110-48", "(82) 99999-0001", "mariasilva@gmail.com"));
+    	clientes.add(new Cliente("João Mamão", "080.075.880-35", "(87) 99999-0002", "jmamao@gmail.com"));
+    	
+    }
+
+
+	public Cliente buscarCliente(Cliente cliente) {
+    	Cliente foundClient;
+    	for (Cliente currentCliente: clientes) {
+    		if (currentCliente.equals(cliente)) {
+    			foundClient = new Cliente(currentCliente.getNome(), currentCliente.getCpf(), currentCliente.getTelefone(), 
+    							currentCliente.getEmail());
+    			return foundClient;
+    		}	
+    	}
+    	return null;
+    	
+    }
+    
+    public Cliente buscarCliente(String cpf) {
+    	for (Cliente currentClient: clientes) {
+    		if (currentClient.getCpf().equals(cpf)) return currentClient;
+    		
+    	}
+    	return null;
+    }
+    
+    public boolean adicionarCliente(Cliente cliente) {
+    	if (!cliente.getCpf().equals(buscarCliente(cliente.getCpf()).getCpf()) && ValidadorCPF.validarCPF(cliente.getCpf())){
+    		if (clientes.add(cliente)) return true;
+    	}
+    	return false;
+    	
+    }
+    
+    public boolean removeCliente(String cpf) {
+    	if (clientes.remove(buscarCliente(cpf))) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    public boolean atualizarCliente(String cpf, Cliente cliente) {
+        Cliente clienteExistente = buscarCliente(cpf);
+
+        if (clienteExistente != null && clienteExistente.getCpf().equals(cliente.getCpf())) {
+            int index = clientes.indexOf(clienteExistente);
+            clientes.set(index, cliente);
+            return true;
+        }
+
+        return false;
+    }
+
+    
+    public static ArrayList<Cliente> getClientes() {
+    	return clientes;
+    }
+    
+}
+

@@ -1,0 +1,157 @@
+{
+    "12345": {
+        "nome": "Guilherme Pereira Souza",
+        "mat": "12345",
+        "idade": 18,
+        "instituicao": "Academia Boa Forma",
+        "treino": {
+            "Supino Inclinado com halteres": {
+                "nomeex": "Supino Inclinado com halteres",
+                "series": 4,
+                "reps": 12,
+                "target": "Peito"
+            },
+            "Triceps Inverso na Polia": {
+                "nomeex": "Triceps Inverso na Polia",
+                "series": 4,
+                "reps": 10,
+                "target": "Membros Superiores"
+            },
+            "Triceps Testa": {
+                "nomeex": "Triceps Testa",
+                "series": 3,
+                "reps": 12,
+                "target": "Membros Superiores"
+            },
+            "Leg Press": {
+                "nomeex": "Leg Press",
+                "series": 3,
+                "reps": 12,
+                "target": "Membros Inferiores"
+            },
+            "Abdominval Reto": {
+                "nomeex": "Abdominval Reto",
+                "series": 3,
+                "reps": 15,
+                "target": "Abd\u00f4mem"
+            },
+            "Rosca Direta": {
+                "nomeex": "Rosca Direta",
+                "series": 4,
+                "reps": 10,
+                "target": "Membros Superiores"
+            },
+            "Barra Reta": {
+                "nomeex": "Barra Reta",
+                "series": 3,
+                "reps": 10,
+                "target": "Costas"
+            },
+            "Levantamento Lateral": {
+                "nomeex": "Levantamento Lateral",
+                "series": 4,
+                "reps": "15/12/10/8",
+                "target": "Membros Superiores"
+            },
+            "Afundo": {
+                "nomeex": "Afundo",
+                "series": 4,
+                "reps": "12",
+                "target": "Costas"
+            }
+        }
+    },
+    "14785": {
+        "nome": "Diego Borbas",
+        "mat": "14785",
+        "idade": 21,
+        "instituicao": "Big Gym",
+        "treino": {
+            "Agachamento Livre": {
+                "nomeex": "Agachamento Livre",
+                "series": 4,
+                "reps": "12",
+                "target": "Membros Inferiores"
+            },
+            "Supino Reto": {
+                "nomeex": "Supino Reto",
+                "series": 4,
+                "reps": 10,
+                "target": "Peito"
+            },
+            "Barra Fixa": {
+                "nomeex": "Barra Fixa",
+                "series": 4,
+                "reps": 8,
+                "target": "Costas"
+            },
+            "Rosca Direta": {
+                "nomeex": "Rosca Direta",
+                "series": 3,
+                "reps": 12,
+                "target": "Membros Superiores"
+            },
+            "Elevação de Pernas Suspensas": {
+                "nomeex": "Elevação de Pernas Suspensas",
+                "series": 3,
+                "reps": 15,
+                "target": "Abd\u00f4men"
+            },
+            "Desenvolvimento com Halteres": {
+                "nomeex": "Desenvolvimento com Halteres",
+                "series": 4,
+                "reps": 10,
+                "target": "Membros Superiores"
+            },
+            "Pulldown na Máquina": {
+                "nomeex": "Pulldown na Máquina",
+                "series": 4,
+                "reps": 10,
+                "target": "Costas"
+            },
+            "Leg Press": {
+                "nomeex": "Leg Press",
+                "series": 4,
+                "reps": 12,
+                "target": "Membros Inferiores"
+            },
+            "Prancha": {
+                "nomeex": "Prancha",
+                "series": 3,
+                "reps": "60 segundos",
+                "target": "Abd\u00f4men"
+            },
+            "Flexão de Braços": {
+                "nomeex": "Flexão de Braços",
+                "series": 3,
+                "reps": 15,
+                "target": "Peito"
+            },
+            "Curl de Pernas": {
+                "nomeex": "Curl de Pernas",
+                "series": 4,
+                "reps": 12,
+                "target": "Membros Inferiores"
+            },
+            "Voador de Peito": {
+                "nomeex": "Voador de Peito",
+                "series": 3,
+                "reps": "12",
+                "target": "Peito"
+            },
+            "Remada Unilateral com Halteres": {
+                "nomeex": "Remada Unilateral com Halteres",
+                "series": 4,
+                "reps": 10,
+                "target": "Costas"
+            },
+            "Abdominal com Pernas Elevadas": {
+                "nomeex": "Abdominal com Pernas Elevadas",
+                "series": 3,
+                "reps": 15,
+                "target": "Abd\u00f4men"
+            }
+        }
+        
+    }
+}

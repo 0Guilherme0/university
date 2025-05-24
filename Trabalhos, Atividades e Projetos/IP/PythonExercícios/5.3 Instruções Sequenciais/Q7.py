@@ -1,0 +1,5 @@
+name = input('Digite seu nome: ')
+mass = float(input('Digite a massa(peso) em kg:'))
+altura = float(input('Digite a sua altura em metros: '))
+imc = mass/(altura*altura)
+print('O IMC do paciente {0} é {1}'.format(name, imc))

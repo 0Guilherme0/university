@@ -1,0 +1,23 @@
+package questao18;
+
+public class App {
+	public static void main(String[] args) {
+        Robot robo = new Robot("R2-D2");
+        System.out.println("Estado inicial: " + robo.status());
+        
+        robo.multipleSteps(3);
+        System.out.println("Após andar 3 passos ao norte: " + robo.status());
+
+        robo.changeDirection("o");
+        robo.multipleSteps(3);
+        System.out.println("Após mudar para leste e andar 2 passos: " + robo.status());
+
+        robo.transport(10, 10);
+        System.out.println("Após transporte para (10, 10): " + robo.status());
+
+        robo.changeDirection("z"); 
+
+        robo.defautPosition();
+        System.out.println("Após resetar para posição/direção padrão: " + robo.status());
+    }
+}

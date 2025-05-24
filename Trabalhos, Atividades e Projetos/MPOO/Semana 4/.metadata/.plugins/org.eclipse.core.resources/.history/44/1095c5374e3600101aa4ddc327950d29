@@ -1,0 +1,23 @@
+package questao4;
+
+public class App {
+    public static void main(String[] args) {
+        BaseDadosCliente baseClientes = new BaseDadosCliente();
+        BaseDadosFuncionario baseFuncionarios = new BaseDadosFuncionario();
+
+        baseClientes.createBase();
+        baseFuncionarios.createBase();
+
+        System.out.println("==== CLIENTES ====");
+        for (Cliente cliente : BaseDadosCliente.getClientes()) {
+            System.out.println(cliente);
+        }
+
+
+        System.out.println("\n==== FUNCIONÁRIOS ====");
+        for (Funcionario funcionario : BaseDadosFuncionario.getFuncionarios()) {
+        	System.out.println(funcionario);
+        }
+    }
+}
+

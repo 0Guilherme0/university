@@ -1,0 +1,23 @@
+package sistema;
+
+public class Usuario {
+	private static int count;
+	int id; 
+	String login;
+	String senha;
+	String cpf;
+
+	public Usuario(String login, String senha, String cpf) {
+		//como fazer o id ser auto-increment?
+		count++;
+		this.id = count;
+		this.login = login;
+		this.senha = senha;
+		
+		//A partir da classe ValidadorCPF, como garantir que um usuario terá o cpf válido
+		if (validarCPF(cpf)) {
+			this.cpf = cpf;			
+		} else this.cpf = null;
+		
+	}
+}

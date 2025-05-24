@@ -1,0 +1,42 @@
+package app;
+
+import entidades.Fruta;
+
+public class Aplication {
+	public static void main(String[] args) {
+		Fruta[] frutas = {
+	            new Fruta("Maçã", true, false, true),    
+	            new Fruta("Banana", false, false, true),   
+	            new Fruta("Abacate", true, true, false),  
+	            new Fruta("Pêssego", true, true, false),   
+	            new Fruta("Cereja", false, true, false),   
+	            new Fruta("Pera", true, false, false),     
+	            new Fruta("Uva", false, false, true)      
+	        };  
+
+     for (int i = 0; i < frutas.length; i++) {
+         Fruta fruta = frutas[i];
+
+         System.out.println("=======================================");
+         System.out.println("ANTES DE COMER:");
+         System.out.println(fruta.status());
+
+         boolean foiComida = fruta.comerFruta();
+
+         System.out.println("\nDEPOIS DE TENTAR COMER:");
+         System.out.println(fruta.status());
+
+         if (foiComida) {
+             System.out.println(fruta.getNome() + " foi comida e referência será removida.");
+             frutas[i] = null;
+             System.gc();  // Sugestão ao GC
+         } else {
+             System.out.println(fruta.getNome() + " não foi comida e ainda está disponível.");
+         }
+
+         System.out.println("=======================================\n");
+     }
+ }
+}
+
+

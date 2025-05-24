@@ -1,0 +1,56 @@
+package entidades;
+
+public class Fruta {
+	public String name;
+	public boolean hasSkin;
+	public boolean hasPits;
+	public boolean canEat;
+	public boolean eaten;
+	
+	public Fruta(String name, boolean hasSkin, boolean hasPits, boolean canEat) {
+		this.name = name;
+		this.hasSkin = hasSkin;
+		this.hasPits = hasPits;
+		this.canEat = canEat;
+		this.eaten = false;
+	}
+	
+	public boolean retirarCaroco() {
+		if (canEat)
+			return false;
+		else {
+			hasPits = false;
+			return true;
+		}
+	}
+	
+	public boolean retirarCasca() {
+		if (canEat)
+			return false;
+		else {
+			hasSkin = false;
+			return true;
+		}
+	} 
+	
+	public boolean comerFruta() {
+		if (canEat) 
+			this.eaten = true;
+			return true;
+		else {
+			retirarCaroco();
+			retirarCasca();
+			this.eaten = true;
+			if (canEat) return true;
+		}
+		return false;
+	}
+	
+	public String status() {
+		return ("Pode comer: " + canEat +"\nTem casca: " + hasPits + "\n Tem caroço: " + hasSkin);
+	}
+	
+	
+	
+
+}

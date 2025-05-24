@@ -1,0 +1,31 @@
+1747753688198	Delete element
+1747762128064	Rename field 'funcionarios'
+1747762213250	Rename local variable 'funcionario'
+1747762237976	Rename local variable 'funcionario'
+1747762264222	Rename method 'buscarFuncionario'
+1747762302834	Rename local variable 'currentFuc'
+1747762323861	Rename method 'adicionarFuncionario'
+1747762334559	Rename method 'removeFuncionario'
+1747762340371	Rename method 'atualizarFuncionario'
+1747762358755	Rename local variable 'funcionario'
+1747762369259	Rename local variable 'foundFunc'
+1747762381956	Rename local variable 'currentFunc'
+1747836995211	Delete element
+1747837002000	Copy package
+1747837013142	Delete element
+1747837019198	Delete element
+1747837273315	Rename type 'BaseDadosCliente'
+1747837305052	Rename type 'Cliente'
+1747837327551	Rename field 'clientes'
+1747837353760	Rename method 'buscarCliente'
+1747837422396	Rename local variable 'cliente'
+1747837435046	Rename local variable 'currentCliente'
+1747837527101	Rename field 'usuario'
+1747837575007	Rename method 'adicionarCliente'
+1747837584815	Rename local variable 'cliente'
+1747837600752	Rename method 'removeCliente'
+1747837618325	Rename local variable 'cliente'
+1747837628566	Rename local variable 'clienteExistente'
+1747837656553	Rename method 'getClientes'
+1747841602425	Rename method 'getUsuario'
+1747929335470	Rename type 'Compras'
