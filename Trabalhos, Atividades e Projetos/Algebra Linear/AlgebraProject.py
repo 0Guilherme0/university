@@ -52,6 +52,8 @@ def forma_escada_reduzida(matriz):
 
     return matriz
 
+for i in range(len(matriz)):
+    print(forma_escada_reduzida(matriz)[i])
  
                     
             
